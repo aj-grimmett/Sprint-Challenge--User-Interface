@@ -61,7 +61,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 header{
-    padding: 3%;
+    padding: 2%;
 }
 header nav{
     width:100%;
@@ -69,36 +69,37 @@ header nav{
     justify-content:space-around;
 }
 #logo{
-    width:20%;
+   max-width:20%;
 }
 #logo img{
-    max-width:100%;
+    max-width:90%;
 }
 #icons{
- font-size: 1.5rem;   
- width:60%;
+ font-size: 1.3rem;   
+ width:50%;
  display:flex;
  justify-content:space-around;
  align-items:center;
 }
-nav a{
+header nav a{
  color:black;
  text-decoration:none;
  letter-spacing:3px;
+ font-size: 1.4rem;
 }
 nav a:hover{
 color:crimson;
 }
 
 h1, h2, h3, h4, h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 1.7rem;
+  margin-bottom: 1.5%;
   font-family: 'Rubik', sans-serif;
 }
 #main-img img{
-  width:60%;
-  margin: 0% 11%;
-  padding: 0% 10% 2%;
+  width:100%;
+  margin: 0% 1%;
+  padding: 0% 4% 2%;
 }
 
 p {
@@ -106,7 +107,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -114,10 +115,12 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-bottom: 1px dashed black;
 }
-
+p{
+    font-size: 1.4rem;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -213,83 +216,118 @@ footer nav a {
     text-decoration: none;
 }
 @media(max-width:800px){
-.top-content{
-display: flex; 
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+header nav{
+    padding: 2% 5%;
+    width:90%;
+    display:flex;
+    justify-content:space-around;
+}
+#logo{
+    width:80%;
+    padding: 2%;
+}
+header nav a{
+    padding: 2%;
+    font-size: 1.3rem;
+}
+#main-img img{
+    width:100%;
+    margin: 0% 1%;
+    padding: 0% 2% 2%;
+  }
+  .top-content .text-container {
+    width: 68%;
+    padding: 0%;
+    padding-bottom: 2%;  
+    font-size: 1.3rem;
+}
+.top-content h2{
+    font-size: 1.6rem;
+}
+p{
+font-size:1.2rem;
 }
 .middle-content .boxes {
-    padding: 2% 20%;
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-evenly;
+    padding: 4% 8%;
   }
   
-.middle-content .boxes .box {
-padding: 3% 15%;
-}
-.bottom-content {
+  .middle-content .boxes .box {
+    width: 30%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-flow:wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-content{
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+  }
+  .bottom-content .text-container {
+    padding: 2% 4%;
+    width: 40%;
 }
-footer nav a{
-    padding: 2% 5%;
-    display: center;
-}
+  footer nav a{
+     font-size: 1.3rem;
+  }
+  
 }
 @media(max-width:500px){
 header nav{
-    width:100%;
+    padding: 2% 5%;
     display:flex;
+    flex-direction: column;
     justify-content:space-around;
+    align-items: center;
 }
-#main-img img{
-    width: 60%;
-    padding:1% 5%;
-    
+#logo{
+    width:100%;
+    padding: 2%;
 }
 #icons{
-    font-size: 1.3rem;   
-    
-    width:60%;
+    padding: 2%;
+    font-size: 1.2rem;
     display:flex;
+    flex-direction: column;
     justify-content:space-around;
-    align-items:center;
-   }
-   #icons a{
-       padding: 0% 2%;
-   }
+    align-items: center;
+}
 .middle-content .boxes {
-  padding: 2% 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4% 2%;
+  }
 .middle-content .boxes .box {
-  padding: 3% 45%;
-}
-.bottom-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
+    width: 30%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-content{
+    flex-direction:column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
 }
 .bottom-content .text-container {
-    padding:3% 1%;
+  padding: 2% 4%;
+  width: 40%;
 }
-footer nav{
-    width: 40%;
-    display: flex;
+  footer nav{
+    width: 100%;
+    padding: 2% 5%;
+    display:flex;
     flex-direction: column;
+    justify-content:space-around;
     align-items: center;
-}
-footer nav a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5% 20%;  
-}
+
+  }
+  footer nav a{
+      padding: 2%;
+  }
 }
