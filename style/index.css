@@ -235,6 +235,10 @@ padding: 3% 15%;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
+footer nav a{
+    padding: 2% 5%;
+    display: center;
+}
 }
 @media(max-width:500px){
 header nav{
@@ -269,11 +273,23 @@ header nav{
 }
 .bottom-content{
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
 justify-content: space-around;
 }
 .bottom-content .text-container {
-    padding-right:3% 1%;
+    padding:3% 1%;
 }
-
+footer nav{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 20%;  
+}
 }
